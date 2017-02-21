@@ -18,7 +18,7 @@ int bsearch(int pos,int start){
 	int m = vec[pos];
 	int right = n-1;
 	int mid  = left + (right - left)/2;
-	while(true){
+	while(left<=right){
 		mid  = left +(right - left)/2;
 		if(vec[mid]<=(long long)m*p&&mid+1<=right&&vec[mid+1]>(long long)m*p){
            break; 
@@ -32,8 +32,13 @@ int bsearch(int pos,int start){
 		else if(vec[mid]>(long long)m*p){
 			right = mid - 1;
 		}
+	//	cout<<"left:"<<left;
+	//	cout<<"right:"<<right<<" mid:"<<mid<<endl;
 	}
-	return mid - pos + 1;
+    //cout<<"n: "<<n<<" mid:"<<mid<<endl;
+	if(vec[mid]<=(long long)m*p)
+    	return mid - pos + 1;
+	else return 0;
 }
 int main(){
   freopen("/home/alexsun/in.txt","r",stdin);
