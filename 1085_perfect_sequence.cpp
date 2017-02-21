@@ -1,6 +1,6 @@
-// pat 1085,perfect sequence
-// this version got 24/5 using b-search...
-// still got no idea.. 
+// a far more simple one,cause less bugs than before
+// this thinking comes from <algorithm notebook page:167>
+// 25/25
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -9,36 +9,20 @@ vector<long long>vec;
 int n;
 int ans=-111;
 long long p;
-// search the element satisify M<vec[pos]*p,where M is as 
-// large as possible from index start to n-1 in vec
-// and return (index of M) - pos + 1
-int bsearch(int pos,int start){
-    if(start>=n) return -111;
-	int left = start;
-	int m = vec[pos];
-	int right = n-1;
-	int mid  = left + (right - left)/2;
-	while(left<=right){
-		mid  = left +(right - left)/2;
-		if(vec[mid]<=(long long)m*p&&mid+1<=right&&vec[mid+1]>(long long)m*p){
-           break; 
-		}
-		else if(vec[mid]<=(long long)m*p&&mid+1>right){
-			break;
-		}
-		else if(vec[mid]<=(long long)m*p){
-            left = mid + 1;
-		}
-		else if(vec[mid]>(long long)m*p){
-			right = mid - 1;
-		}
-	//	cout<<"left:"<<left;
-	//	cout<<"right:"<<right<<" mid:"<<mid<<endl;
-	}
-    //cout<<"n: "<<n<<" mid:"<<mid<<endl;
-	if(vec[mid]<=(long long)m*p)
-    	return mid - pos + 1;
-	else return 0;
+// return the index of an element in the vec
+// which vec[index] is the first element meet vec[index]>x;
+int bsearch(int pos,long long x){
+	 if(vec[n-1]<=x) return n; 
+	// long long m = vec[pos] * p;
+     int left = pos+1;
+	 int right = n-1;
+	 int mid;
+     while(left<right){
+		 mid  = (left + right)/2;
+         if(vec[mid]<=x) left = mid + 1;
+		 else right = mid;
+	 }
+	 return left;
 }
 int main(){
   freopen("/home/alexsun/in.txt","r",stdin);
@@ -47,7 +31,7 @@ int main(){
   for(int i=0;i<n;i++) scanf("%lld",&vec[i]);
   sort(vec.begin(),vec.end());
   for(int i=0;i<n;i++){
-    ans =  max(ans,bsearch(i,i+1));
+    ans =  max(ans,bsearch(i,(long long)vec[i]*p) - i);
   }
   cout<<ans<<endl;
   return 0;
