@@ -1,8 +1,14 @@
+// this version get timeout.21/25
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
 #include <string>
 #include<vector>
+//only in test of git....
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>come on>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>
 using namespace std;
 #define MAX 666666
 vector<int> vec;
