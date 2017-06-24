@@ -1,0 +1,26 @@
+﻿¶¯Ì¬¹æ»®£º
+ 1045 favorite color stripe; ¡¾¿É´øÖØ¸´µÄLCSÎÊÌâ¡¿£»
+ 1104 Sum of Number Segments (20) ¡¾¼òµ¥ÎÊÌâ¡¿
+ 1093. Count PAT's (25)£»
+²¢²é¼¯ÎÊÌâ£º
+ 1106 Social Clusters (30)
+¸÷ÖÖÊ÷£¨BST CBT etc.£©
+ 1090. Highest Price in Supply Chain (25)  (DFS OR BFS)
+ 1086. Tree Traversals Again (25) None-recursion tree traversal (using stack)
+ DFS problem
+ 1091 acute stroke
+BFS 
+ 1076.Forwards on Weibo (30)
+/*¶ñÐÄµÄ×Ö·û´®¡£¡£*/
+  1082. Read Number in Chinese ÕûÊý´®ºÍ×Ö·û´®×ª»¯
+  1073. Scientific Notation (20)
+  1061. Dating (20)   ¶ñÐÄµ½¼ÒÁË¡¢¡¢
+  1069. The Black Hole of Numbers (20)  ¿ÓËÀÈË²»³¥Ãü¡£¡£
+  1077. Kuchiguse (20) ¿Óµ½¶Ç×ÓÌÛ¡£¡£freopen??ºÇºÇºÇ¡£¡£¡£
+×î¶ÌÂ·¾¶£¨dijkstra's algorithm£©
+1072. Gas Station (30)
+1087. All Roads Lead to Rome (30)
+1111. Online Map (30)
+¾­µäËã·
+  1049. Counting Ones (30) ÊýÒ»ÎÊÌâ ³£¼ûÃæÊÔÌâ
+  

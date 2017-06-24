@@ -1,0 +1,26 @@
+动态规划：
+ 1045 favorite color stripe; 【可带重复的LCS问题】；
+ 1104 Sum of Number Segments (20) 【简单问题】
+ 1093. Count PAT's (25)；
+并查集问题：
+ 1106 Social Clusters (30)
+各种树（BST CBT etc.）
+ 1090. Highest Price in Supply Chain (25)  (DFS OR BFS)
+ 1086. Tree Traversals Again (25) None-recursion tree traversal (using stack)
+ DFS problem
+ 1091 acute stroke
+BFS 
+ 1076.Forwards on Weibo (30)
+/*恶心的字符串。。*/
+  1082. Read Number in Chinese 整数串和字符串转化
+  1073. Scientific Notation (20)
+  1061. Dating (20)   恶心到家了、、
+  1069. The Black Hole of N	umbers (20)  坑死人不偿命。。
+  1077. Kuchiguse (20) 坑到肚子疼。。freopen??呵呵呵。。。
+最短路径（dijkstra's algorithm）
+1072. Gas Station (30)
+1087. All Roads Lead to Rome (30)
+1111. Online Map (30)
+经典算法
+  1049. Counting Ones (30) 数一问题 常见面试题
+  
